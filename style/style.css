@@ -418,6 +418,7 @@ td{
 @media (max-width:894px){
   #nav{
     width: 220px;
+	  z-index: 9990;
   }
   #nav-title h1 {
     font-size: 20px;
