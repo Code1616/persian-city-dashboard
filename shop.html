@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <title>shop panel</title>
+    <link rel="stylesheet" href="./style/style-shop.css">
+
+    <!-- partial:index.partial.html -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d8dd983318.css" crossorigin="anonymous">
+    <!-- template link -->
+    <!-- https://i.morioh.com/210516/ac6ef58a.webp -->
+
+</head>
+
+<body>
+
+    <section id="container">
+        <input type="checkbox" id="navbtn">
+        <label for="navbtn" id="ic-lbl">
+            <i class="fa fa-bars tn-icon"></i>
+        </label>
+        <div id="nav">
+            <div id="nav-title">
+                <img style="width: 54px;" src="./image/logo.png" alt="">
+                <h1>Persian City</h1>
+            </div>
+            <ul id="nav-ul">
+                <li>
+                    <a href="./index.html">
+                        <span><i class="bi bi-person-dash"></i></span>
+                        <span data-en="Dashboard" data-fa="داشبورد">داشبورد</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./shop.html">
+                        <span><i class="bi bi-cart3"></i></span>
+                        <span data-en="Shop" data-fa="فروشگاه">فروشگاه</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="log-out">
+                <i class='bx bx-log-out'></i>
+                <span data-en="Log Out" data-fa="خروج">خروج</span>
+            </div>
+
+        </div>
+        <div id="page">
+            <div id="top-nav">
+                <div id="tn-title">
+                    <h1>فروشگاه</h1>
+                </div>
+                <div id="profile">
+                    <img src="./image/images.jpg">
+                    <span id="pro-name">miss Roozhan</span>
+                    <i class='bx bxs-chevron-down'></i>
+                    <button class="lang-switch" onclick="toggleLanguage()" data-en="FA" data-fa="EN">EN</button>
+
+                </div>
+            </div>
+
+
+
+            <section class="slider">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./image/car.png" alt="" class="card-img">
+                        <h1 class="card-title" data-en="Mercedes Benz S-Class" data-fa="مرسدس بنز S کلاس">مرسدس بنز S
+                            کلاس</h1>
+                        <div class="card-body">
+                            <div class="card-star">
+                                <span class="rating-value" data-en="220" data-fa="220">220</span>
+                                <span class="star"><i class="bi bi-speedometer2"></i></span>
+                            </div>
+                            <p class="card-price" data-en="T600,000" data-fa="T600.000">T600.000</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success" data-en="Buy" data-fa="خرید">خرید</button>
+                            <button class="btn btn-border" data-en="FAQ" data-fa="سوالات متداول">سوالات متداول</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./image/car.png" alt="" class="card-img">
+                        <h1 class="card-title" data-en="Range Rover" data-fa="رنج روور (Range Rover)">رنج روور (Range
+                            Rover)</h1>
+                        <div class="card-body">
+                            <div class="card-star">
+                                <span class="rating-value" data-en="279" data-fa="279">279</span>
+                                <span class="star"><i class="bi bi-speedometer2"></i></span>
+                            </div>
+                            <p class="card-price" data-en="T760,000" data-fa="T760.000">T760.000</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success" data-en="Buy" data-fa="خرید">خرید</button>
+                            <button class="btn btn-border" data-en="FAQ" data-fa="سوالات متداول">سوالات متداول</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./image/car.png" alt="" class="card-img">
+                        <h1 class="card-title" data-en="Audi e-tron Quattro" data-fa="آئودی ای ترون کوآترو">آئودی ای
+                            ترون کوآترو</h1>
+                        <div class="card-body">
+                            <div class="card-star">
+                                <span class="rating-value" data-en="247" data-fa="247">247</span>
+                                <span class="star"><i class="bi bi-speedometer2"></i></span>
+                            </div>
+                            <p class="card-price" data-en="T450,000" data-fa="T450.000">T450.000</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success" data-en="Buy" data-fa="خرید">خرید</button>
+                            <button class="btn btn-border" data-en="FAQ" data-fa="سوالات متداول">سوالات متداول</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./image/car.png" alt="" class="card-img">
+                        <h1 class="card-title" data-en="Tesla Model S" data-fa="تسلا مدل Tesla Model S">تسلا مدل Tesla
+                            Model S</h1>
+                        <div class="card-body">
+                            <div class="card-star">
+                                <span class="rating-value" data-en="311" data-fa="311">311</span>
+                                <span class="star"><i class="bi bi-speedometer2"></i></span>
+                            </div>
+                            <p class="card-price" data-en="T900,000" data-fa="T900.000">T900.000</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success" data-en="Buy" data-fa="خرید">خرید</button>
+                            <button class="btn btn-border" data-en="FAQ" data-fa="سوالات متداول">سوالات متداول</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./image/car.png" alt="" class="card-img">
+                        <h1 class="card-title" data-en="Audi A8" data-fa="آئودی (Audi A8)">آئودی (Audi A8)</h1>
+                        <div class="card-body">
+                            <div class="card-star">
+                                <span class="rating-value" data-en="210" data-fa="210">210</span>
+                                <span class="star"><i class="bi bi-speedometer2"></i></span>
+                            </div>
+                            <p class="card-price" data-en="T540,000" data-fa="T540.000">T540.000</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success" data-en="Buy" data-fa="خرید">خرید</button>
+                            <button class="btn btn-border" data-en="FAQ" data-fa="سوالات متداول">سوالات متداول</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    </div>
+    </section>
+    <!-- partial -->
+    <script>
+        let currentLang = 'fa';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'fa' ? 'en' : 'fa';
+            document.documentElement.lang = currentLang;
+            //   document.body.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+
+            // Update all translatable elements
+            document.querySelectorAll('[data-en]').forEach(element => {
+                element.textContent = element.getAttribute(`data-${currentLang}`);
+            });
+
+            // Update language switch button
+            const langBtn = document.querySelector('.lang-switch');
+            langBtn.textContent = langBtn.getAttribute(`data-${currentLang === 'fa' ? 'en' : 'fa'}`);
+        }
+
+        // Initialize language based on browser preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('fa')) {
+                currentLang = 'fa';
+                toggleLanguage();
+            }
+        });
+    </script>
+</body>
+
+</html>

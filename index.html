@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <title>user panel</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- partial:index.partial.html -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/d8dd983318.css" crossorigin="anonymous">
+  <!-- template link -->
+  <!-- https://i.morioh.com/210516/ac6ef58a.webp -->
+</head>
+
+<body>
+
+  <section id="container">
+    <input type="checkbox" id="navbtn">
+    <label for="navbtn" id="ic-lbl">
+      <i class="fa fa-bars tn-icon"></i>
+    </label>
+    <div id="nav">
+      <div id="nav-title">
+        <img style="width: 54px;" src="./image/logo.png" alt="">
+        <h1>Persian City</h1>
+      </div>
+      <ul id="nav-ul">
+        <li>
+          <a href="#">
+            <span><i class="bi bi-person-dash"></i></span>
+            <span data-en="Dashboard" data-fa="داشبورد">داشبورد</span>
+          </a>
+        </li>
+        <li>
+          <a href="./shop.html">
+            <span><i class="bi bi-cart3"></i></span>
+            <span data-en="Shop" data-fa="فروشگاه">فروشگاه</span>
+          </a>
+        </li>
+      </ul>
+      <div id="log-out">
+        <i class='bx bx-log-out'></i>
+        <span data-en="Logout" data-fa="خروج">خروج</span>
+      </div>
+    </div>
+    <div id="page">
+      <div id="top-nav">
+        <div id="tn-title">
+          <!--         <input type="checkbox" id="navbtn">
+        <label for="navbtn"> -->
+          <!--         </label>  -->
+          <h1 data-en="Dashboard" data-fa="داشبورد">داشبورد</h1>
+        </div>
+        <div id="profile">
+          <img src="./image/images.jpg">
+          <span id="pro-name">miss Roozhan</span>
+          <i class='bx bxs-chevron-down'></i>
+          <button class="lang-switch" onclick="toggleLanguage()" data-en="FA" data-fa="EN">EN</button>
+
+        </div>
+      </div>
+      <div id="home-content">
+        <div id="box-list">
+          <div class="box">
+            <div>
+              <h2 data-en="Bulletproof Vest" data-fa="جلیقه ضدگلوله">جلیقه ضدگلوله</h2>
+              <h1 data-en="Unspecified" data-fa="نامشخص">نامشخص<span style="display: none;">$</span></h1>
+              <span class="day-details" data-en="Character's vest health percentage"
+                data-fa="درصد سلامت جلیقه ضدگلوله کاراکتر">درصد سلامت جلیقه ضدگلوله کاراکتر</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-shield-shaded the-fix"></i></span></div>
+          </div>
+          <div class="box">
+            <div>
+              <h2 data-en="Thirst" data-fa="تشنگی">تشنگی</h2>
+              <h1 data-en="75.97" data-fa="75.97">75.97<span>$</span></h1>
+              <span class="day-details" data-en="Character's thirst percentage" data-fa="درصد تشنگی کاراکتر">درصد تشنگی
+                کاراکتر</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-droplet-fill the-fix"></i></span></div>
+          </div>
+          <div class="box">
+            <div>
+              <h2 data-en="Hunger" data-fa="گرسنگی">گرسنگی</h2>
+              <h1 data-en="67.97%" data-fa="67.97%"><span>%</span>67.97</h1>
+              <span class="day-details" data-en="Character's hunger percentage" data-fa="درصد گرسنگی کاراکتر">درصد
+                گرسنگی کاراکتر</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-cup-hot-fill the-fix"></i></span></div>
+          </div>
+          <div class="box">
+            <div>
+              <h2 data-en="Health" data-fa="سلامت">سلامت</h2>
+              <h1 data-en="75%" data-fa="75%"><span>%</span>75</h1>
+              <span class="day-details" data-en="Character's physical health percentage"
+                data-fa="درصد سلامت بدنی کاراکتر">درصد سلامت بدنی کاراکتر</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-lungs-fill"></i></span></div>
+          </div>
+          <div class="box">
+            <div>
+              <h2 data-en="Bank Balance" data-fa="موجودی بانک">موجودی بانک</h2>
+              <h1 data-en="3,246,779$" data-fa="3246779$">3246779<span>$</span></h1>
+              <span class="day-details" data-en="Your bank balance" data-fa="موجودی بانک شما">موجودی بانک شما</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-bank the-fix"></i></span></div>
+          </div>
+          <div class="box">
+            <div>
+              <h2 data-en="Wallet" data-fa="کیف پول">کیف پول</h2>
+              <h1 data-en="423,523,790$" data-fa="423523790$">423523790<span>$</span></h1>
+              <span class="day-details" data-en="Character's pocket money" data-fa="مقدار پول تو جیب کاراکتر">مقدار پول
+                تو جیب کاراکتر</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-cash the-fix"></i></span></div>
+          </div>
+          <div class="box">
+            <div>
+              <h2 data-en="Stress" data-fa="استرس">استرس</h2>
+              <h1 data-en="75.97%" data-fa="75.97%"><span>%</span>75.97</h1>
+              <span class="day-details" data-en="Character's stress percentage" data-fa="درصد استرس کاراکتر">درصد استرس
+                کاراکتر</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-bullseye the-fix"></i></span></div>
+          </div>
+          <div class="box">
+            <div>
+              <h2 data-en="Cryptocurrency" data-fa="ارز دیجیتال">ارز دیجیتال</h2>
+              <h1 data-en="0" data-fa="0">0</h1>
+              <span class="day-details" data-en="Amount of cryptocurrency" data-fa="مقدار ارز دیجیتال">مقدار ارز
+                دیجیتال</span>
+            </div>
+            <div class="card-bx"><span class="card"><i class="bi bi-coin the-fix"></i></span></div>
+          </div>
+        </div>
+        <div id="main-content">
+          <div id="resent-sale">
+            <div class="heading" data-en="Your Cars" data-fa="ماشین های شما">ماشین های شما</div>
+            <table class="table-cen">
+              <div>
+
+              </div>
+              <tr class="ani-tab">
+                <td data-en="Car Name" data-fa="نام ماشین">نام ماشین</td>
+                <td data-en="License Plate" data-fa="پلاک">پلاک</td>
+                <td data-en="Insurance Type" data-fa="نوع بیمه">نوع بیمه</td>
+              </tr>
+              <tr class="ani-tab">
+                <td data-en="1216765807" data-fa="1216765807">1216765807</td>
+                <td data-en="DHZ 177" data-fa="DHZ 177">DHZ 177</td>
+                <td data-en="Three Stars" data-fa="سه ستاره">سه ستاره</td>
+              </tr>
+              <tr class="ani-tab">
+                <td data-en="1274868363" data-fa="1274868363">1274868363</td>
+                <td data-en="MZN 426" data-fa="MZN 426">MZN 426</td>
+                <td data-en="Two Stars" data-fa="دو ستاره">دو ستاره</td>
+              </tr>
+
+
+
+            </table>
+
+          </div>
+          <div class="top-sale">
+            <div class="heading" data-en="Last Purchased Items" data-fa="آخرین آیتم های خریداری شده">آخرین آیتم های
+              خریداری شده</div>
+            <div id="top-sel-costomer">
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">Adder</span>
+                </div>
+                <span class="t-s-c-price">$1,40,000</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">water</span>
+                </div>
+                <span class="t-s-c-price">$5</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">Weapon license</span>
+                </div>
+                <span class="t-s-c-price">$20,000</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">Weapon_snspiston</span>
+                </div>
+                <span class="t-s-c-price">$4,000</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">cloth</span>
+                </div>
+                <span class="t-s-c-price">$500</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">Police bill</span>
+                </div>
+                <span class="t-s-c-price">$2,345</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">Bmx</span>
+                </div>
+                <span class="t-s-c-price">$2,345</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">Silencer</span>
+                </div>
+                <span class="t-s-c-price">$1000</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="w-cel">
+            <div class="heading" data-en="Your Houses" data-fa="خانه های شما">خانه های شما</div>
+            <div class="top-sel-costomer">
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">543</span>
+                </div>
+                <span class="t-s-c-price">$1,40,000</span>
+              </div>
+              <div class="t-s-c-list">
+                <div class="split-section">
+                  <span class="t-s-c-name">249</span>
+                </div>
+                <span class="t-s-c-price">$1,00,000</span>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partial -->
+  <script>
+    let currentLang = 'fa';
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'fa' ? 'en' : 'fa';
+      document.documentElement.lang = currentLang;
+      // document.body.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+
+      // Update all translatable elements
+      document.querySelectorAll('[data-en]').forEach(element => {
+        element.textContent = element.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update language switch button
+      const langBtn = document.querySelector('.lang-switch');
+      langBtn.textContent = langBtn.getAttribute(`data-${currentLang === 'fa' ? 'en' : 'fa'}`);
+    }
+
+    // Initialize language based on browser preference
+    document.addEventListener('DOMContentLoaded', () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith('fa')) {
+        currentLang = 'fa';
+        toggleLanguage();
+      }
+    });
+  </script>
+</body>
+
+</html>
