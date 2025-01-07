@@ -456,7 +456,7 @@ td{
   }
   #nav{
     position:absolute;
-    z-index:10;
+    z-index:9990;
     display:none;
   }
   #nav-ul li a{
