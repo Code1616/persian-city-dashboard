@@ -187,6 +187,7 @@ body{
   background-color:#f5f7fb;
   border:2px solid #efeef1;
   cursor: pointer;
+	flex-direction: row-reverse;
 /*   overflow:hidden; */
 }
 #profile img{
